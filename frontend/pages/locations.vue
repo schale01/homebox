@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { useTreeState } from "~~/components/Location/Tree/tree-state";
   import MdiCollapseAllOutline from "~icons/mdi/collapse-all-outline";
+  import MdiExpandAllOutline from "~icons/mdi/expand-all-outline";
 
   definePageMeta({
     middleware: ["auth"],
@@ -58,6 +59,11 @@
       treeState.value[key] = false;
     }
   }
+  function openAll() {
+    for (const key in treeState.value) {
+      treeState.value[key] = true;
+    }
+  }
 </script>
 
 <template>
@@ -69,6 +75,9 @@
           <div class="btn-group">
             <button class="btn tooltip tooltip-top btn-sm" data-tip="Collapse Tree" @click="closeAll">
               <MdiCollapseAllOutline />
+            </button>
+            <button class="btn tooltip tooltip-top btn-sm" data-tip="Expand Tree" @click="openAll">
+              <MdiExpandAllOutline />
             </button>
           </div>
         </div>

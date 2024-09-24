@@ -1,7 +1,7 @@
 <template>
   <div class="z-[999]">
     <input :id="modalId" v-model="modal" type="checkbox" class="modal-toggle" />
-    <div class="modal modal-bottom overflow-visible sm:modal-middle">
+    <dialog class="modal modal-bottom overflow-visible sm:modal-middle">
       <div class="modal-box relative overflow-auto">
         <button :for="modalId" class="btn btn-circle btn-sm absolute right-2 top-2" @click="close">✕</button>
 
@@ -10,7 +10,7 @@
         </h3>
         <slot> </slot>
       </div>
-    </div>
+    </dialog>
   </div>
 </template>
 

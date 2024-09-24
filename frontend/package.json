@@ -51,7 +51,7 @@
     "@vueuse/nuxt": "^10.11.1",
     "@vueuse/router": "^10.11.1",
     "autoprefixer": "^10.4.20",
-    "daisyui": "^2.52.0",
+    "daisyui": "^3.9.4",
     "date-fns": "^3.6.0",
     "dompurify": "^3.1.6",
     "h3": "^1.12.0",
