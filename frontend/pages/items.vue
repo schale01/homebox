@@ -372,7 +372,7 @@
           </template>
         </SearchFilter>
         <SearchFilter v-model="selectedLabels" :label="$t('global.labels')" :options="labels" />
-        <div class="dropdown">
+        <div class="dropdown z-[9999]">
           <label tabindex="0" class="btn btn-xs">{{ $t("items.options") }}</label>
           <div
             tabindex="0"
@@ -402,7 +402,7 @@
             <BaseButton class="btn-sm btn-block" @click="reset"> {{ $t("items.reset_search") }} </BaseButton>
           </div>
         </div>
-        <div class="dropdown dropdown-end ml-auto">
+        <div class="dropdown dropdown-end z-[9999] ml-auto">
           <label tabindex="0" class="btn btn-xs">{{ $t("items.tips") }}</label>
           <div
             tabindex="0"

@@ -1,5 +1,5 @@
 <template>
-  <div ref="el" class="dropdown" :class="{ 'dropdown-open': dropdownOpen }">
+  <div ref="el" class="dropdown z-[9999]" :class="{ 'dropdown-open': dropdownOpen }">
     <button ref="btn" tabindex="0" class="btn btn-xs" @click="toggle">
       {{ label }} {{ len }} <MdiChevronDown class="size-4" />
     </button>

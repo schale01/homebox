@@ -22,7 +22,8 @@
             v-for="(obj, idx) in filteredItems"
             :key="idx"
             :class="{
-              active: selected.includes(obj[props.uniqueField]),
+              // TODO: fix this properly later
+              border: selected.includes(obj[props.uniqueField]),
             }"
           >
             <button type="button" @click="toggle(obj[props.uniqueField])">
