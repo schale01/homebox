@@ -12,17 +12,17 @@
       <div
         tabindex="0"
         style="display: inline"
-        class="dropdown-content menu z-[9999] mb-1 w-full rounded border border-gray-400 bg-base-100 shadow"
+        class="menu dropdown-content z-[9999] mb-1 w-full rounded border border-gray-400 bg-base-100 shadow"
       >
         <div class="m-2">
-          <input v-model="search" placeholder="Search…" class="input input-bordered input-sm w-full" />
+          <input v-model="search" placeholder="Search…" class="input input-sm input-bordered w-full" />
         </div>
         <ul class="max-h-60 overflow-y-scroll">
           <li
             v-for="(obj, idx) in filteredItems"
             :key="idx"
             :class="{
-              bordered: selected.includes(obj[props.uniqueField]),
+              active: selected.includes(obj[props.uniqueField]),
             }"
           >
             <button type="button" @click="toggle(obj[props.uniqueField])">

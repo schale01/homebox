@@ -14,7 +14,7 @@
         <button
           v-if="!!modelValue && Object.keys(modelValue).length !== 0"
           style="transform: translateY(-50%)"
-          class="btn btn-circle btn-xs no-animation absolute right-2 top-1/2"
+          class="btn btn-circle no-animation btn-xs absolute right-2 top-1/2"
           @click="clear"
         >
           x
@@ -23,7 +23,7 @@
       <ul
         tabindex="0"
         style="display: inline"
-        class="dropdown-content menu z-[9999] mb-1 max-h-60 w-full overflow-y-scroll rounded border border-gray-400 bg-base-100 shadow"
+        class="menu dropdown-content z-[9999] mb-1 max-h-60 w-full overflow-y-scroll rounded border border-gray-400 bg-base-100 shadow"
       >
         <li v-for="(obj, idx) in filtered" :key="idx">
           <div type="button" @click="select(obj)">

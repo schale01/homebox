@@ -49,7 +49,7 @@
           <StatCard
             v-for="stat in stats"
             :key="stat.id"
-            class="stats border-l-primary block shadow-xl"
+            class="stats block border-l-primary shadow-xl"
             :title="stat.title"
             :value="stat.value"
             :type="stat.type"

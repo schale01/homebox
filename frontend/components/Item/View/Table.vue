@@ -81,7 +81,7 @@
         <label tabindex="0" class="btn btn-square btn-outline btn-sm m-1">
           <MdiTableCog />
         </label>
-        <ul tabindex="0" class="dropdown-content rounded-box flex w-64 flex-col gap-2 bg-base-100 p-2 pl-3 shadow">
+        <ul tabindex="0" class="dropdown-content flex w-64 flex-col gap-2 rounded-box bg-base-100 p-2 pl-3 shadow">
           <li>Headers:</li>
           <li v-for="(h, i) in headers" class="flex flex-row items-center gap-1">
             <button
@@ -105,7 +105,7 @@
             <input
               :id="h.value"
               type="checkbox"
-              class="checkbox checkbox-primary"
+              class="checkbox-primary checkbox"
               :checked="h.enabled"
               @change="toggleHeader(h.value)"
             />

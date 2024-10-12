@@ -5,7 +5,7 @@
     </button>
     <div tabindex="0" class="dropdown-content mt-1 w-64 rounded-md bg-base-100 shadow">
       <div class="mb-1 px-4 pt-4 shadow-sm">
-        <input v-model="search" type="text" placeholder="Search…" class="input input-bordered input-sm mb-2 w-full" />
+        <input v-model="search" type="text" placeholder="Search…" class="input input-sm input-bordered mb-2 w-full" />
       </div>
       <div class="max-h-72 divide-y overflow-y-auto">
         <label
@@ -18,7 +18,7 @@
               {{ v[display] }}
             </slot>
           </span>
-          <input v-model="selected" type="checkbox" :value="v" class="checkbox checkbox-primary checkbox-sm" />
+          <input v-model="selected" type="checkbox" :value="v" class="checkbox-primary checkbox checkbox-sm" />
         </label>
         <hr v-if="selected.length > 0" />
         <label
@@ -31,7 +31,7 @@
               {{ v[display] }}
             </slot>
           </span>
-          <input v-model="selected" type="checkbox" :value="v" class="checkbox checkbox-primary checkbox-sm" />
+          <input v-model="selected" type="checkbox" :value="v" class="checkbox-primary checkbox checkbox-sm" />
         </label>
       </div>
     </div>

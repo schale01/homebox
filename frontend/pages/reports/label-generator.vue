@@ -356,7 +356,7 @@
       <div class="max-w-xs">
         <div class="form-control">
           <label class="label cursor-pointer">
-            <input v-model="bordered" type="checkbox" class="checkbox checkbox-secondary" />
+            <input v-model="bordered" type="checkbox" class="checkbox-secondary checkbox" />
             <span class="label-text">Bordered Labels</span>
           </label>
         </div>

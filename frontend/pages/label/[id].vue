@@ -110,7 +110,7 @@
         <header class="mb-2">
           <div class="flex flex-wrap items-end gap-2">
             <div class="avatar placeholder mb-auto">
-              <div class="w-12 rounded-full bg-neutral-focus text-neutral-content">
+              <div class="bg-neutral-focus w-12 rounded-full text-neutral-content">
                 <MdiPackageVariant class="size-7" />
               </div>
             </div>

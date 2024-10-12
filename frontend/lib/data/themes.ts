@@ -28,7 +28,10 @@ export type DaisyTheme =
   | "lemonade"
   | "night"
   | "coffee"
-  | "winter";
+  | "winter"
+  | "dim"
+  | "nord"
+  | "sunset";
 
 export type ThemeOption = {
   label: string;
@@ -41,12 +44,12 @@ export const themes: ThemeOption[] = [
     value: "homebox",
   },
   {
-    label: "Garden",
-    value: "garden",
-  },
-  {
     label: "Light",
     value: "light",
+  },
+  {
+    label: "Dark",
+    value: "dark",
   },
   {
     label: "Cupcake",
@@ -85,6 +88,10 @@ export const themes: ThemeOption[] = [
     value: "halloween",
   },
   {
+    label: "Garden",
+    value: "garden",
+  },
+  {
     label: "Forest",
     value: "forest",
   },
@@ -121,7 +128,7 @@ export const themes: ThemeOption[] = [
     value: "dracula",
   },
   {
-    label: "Cmyk",
+    label: "CMYK",
     value: "cmyk",
   },
   {
@@ -151,5 +158,17 @@ export const themes: ThemeOption[] = [
   {
     label: "Winter",
     value: "winter",
+  },
+  {
+    label: "Dim",
+    value: "dim",
+  },
+  {
+    label: "Nord",
+    value: "nord",
+  },
+  {
+    label: "Sunset",
+    value: "sunset",
   },
 ];

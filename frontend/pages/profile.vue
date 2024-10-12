@@ -372,7 +372,7 @@
             {{ token }}
           </div>
         </div>
-        <div class="p-5 pt-0 form-control w-full">
+        <div class="form-control w-full p-5 pt-0">
           <label class="label">
             <span class="label-text">{{ $t("profile.language") }}</span>
           </label>
@@ -465,9 +465,11 @@
 
         <div class="px-4 pb-4">
           <div class="mb-3">
-            <BaseButton size="sm" @click="setDisplayHeader"> {{ $t("profile.display_header", { currentValue: preferences.displayHeaderDecor }) }} </BaseButton>
+            <BaseButton size="sm" @click="setDisplayHeader">
+              {{ $t("profile.display_header", { currentValue: preferences.displayHeaderDecor }) }}
+            </BaseButton>
           </div>
-          <div class="rounded-box grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          <div class="grid grid-cols-1 gap-4 rounded-box sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             <div
               v-for="theme in themes"
               :key="theme.value"

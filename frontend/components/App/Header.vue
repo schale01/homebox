@@ -109,7 +109,7 @@
             </span>
             Create
           </label>
-          <ul tabindex="0" class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow">
+          <ul tabindex="0" class="menu dropdown-content w-52 rounded-box bg-base-100 p-2 shadow">
             <li v-for="btn in dropdown" :key="btn.name">
               <button @click="btn.action">
                 {{ btn.name }}

@@ -17,7 +17,7 @@
             <label tabindex="0" class="btn rounded-l-none rounded-r-xl">
               <MdiChevronDown class="size-5" />
             </label>
-            <ul tabindex="0" class="dropdown-content menu rounded-box right-0 w-64 bg-base-100 p-2 shadow">
+            <ul tabindex="0" class="menu dropdown-content right-0 w-64 rounded-box bg-base-100 p-2 shadow">
               <li>
                 <button type="button" @click="create(false)">{{ $t("global.create_and_add") }}</button>
               </li>

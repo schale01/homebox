@@ -1,7 +1,7 @@
 <template>
   <div v-if="!inline" class="form-control w-full">
     <label class="label cursor-pointer">
-      <input v-model="value" type="checkbox" class="checkbox checkbox-primary" />
+      <input v-model="value" type="checkbox" class="checkbox-primary checkbox" />
       <span class="label-text"> {{ label }}</span>
     </label>
   </div>
@@ -11,7 +11,7 @@
         {{ label }}
       </span>
     </label>
-    <input v-model="value" type="checkbox" class="checkbox checkbox-primary" />
+    <input v-model="value" type="checkbox" class="checkbox-primary checkbox" />
   </div>
 </template>
 

@@ -55,13 +55,13 @@
             <div class="flex flex-col bg-base-200">
               <div class="mb-6">
                 <div class="dropdown visible w-full">
-                  <label tabindex="0" class="text-no-transform btn m-1 btn-primary btn-block text-lg">
+                  <label tabindex="0" class="text-no-transform btn btn-primary btn-block m-1 text-lg">
                     <span>
                       <MdiPlus class="-ml-1 mr-1" />
                     </span>
                     {{ $t("global.create") }}
                   </label>
-                  <ul tabindex="0" class="dropdown-content z-50 menu rounded-box w-full bg-base-100 p-2 shadow">
+                  <ul tabindex="0" class="menu dropdown-content z-50 w-full rounded-box bg-base-100 p-2 shadow">
                     <li v-for="btn in dropdown" :key="btn.name">
                       <button @click="btn.action">
                         {{ btn.name }}
@@ -89,7 +89,7 @@
           </div>
 
           <!-- Bottom -->
-          <button class="rounded-btn mx-2 mt-auto p-3 hover:bg-base-300" @click="logout">
+          <button class="mx-2 mt-auto rounded-btn p-3 hover:bg-base-300" @click="logout">
             {{ $t("global.sign_out") }}
           </button>
         </div>

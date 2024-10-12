@@ -48,10 +48,14 @@ module.exports = {
       "night",
       "coffee",
       "winter",
+      "dim",
+      "nord",
+      "sunset",
     ],
   },
   variants: {
     extend: {},
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("@tailwindcss/aspect-ratio"), require("@tailwindcss/typography"), require("daisyui")],
 };
